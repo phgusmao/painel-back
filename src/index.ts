@@ -6,7 +6,7 @@ import { Painel } from "./entity/Painel"
 
 AppDataSource.initialize().then(async () => {
 
-    console.log("Express server has started on port 3000. Open http://localhost:3000/painel to see results")
+    console.log("Express server has started on port 3333. Open http://localhost:3333/painel to see results")
 
 }).catch(error => console.log(error))
 
@@ -19,5 +19,5 @@ app.get("/painel", async function (req: Request, res: Response) {
     res.json(painel)
 })
 
-app.listen(3000)
+app.listen(3333)
 
